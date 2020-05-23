@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Syntax and Selector</title>
+  </head>
+  <body style="font-family: helvetica; font-size: 12px;">
+    <table border="1">
+      <thead>
+        <tr style="background: black; color: white;">
+          <th>CSS Syntax</th>
+          <th>CSS Writing Styles</th>
+          <th>CSS Selector</th>
+          <th>CSS Combinator</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>คือส่วนประกอบทั้งหมดที่มี Selector, Property และ Value</td>
+          <td>
+            <ul>
+              <p>3 แบบ</p>
+              <li>Inline</li>
+              <li>Internal</li>
+              <li>External</li>
+            </ul>
+          </td>
+          <td>
+            การเรียกใช้งานจาก Tag ใน HTML หรือจากการกำหนดชื่อ Class หรือ ID ของ
+            ​HTML tag
+          </td>
+          <td>
+            ตัวเลือกใน CSS ที่มีมากกว่าหนึ่งตัวเลือก มีทั้งหมด 4 ตัว
+            <ul>
+              <li>&nbsp;ช่องว่าง</li>
+              <li>(>) ตัวลูก</li>
+              <li>(+) พี่น้องที่อยู่ติดกัน</li>
+              <li>(~) พี่น้องทั่วไป</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Example of CSS Syntax</h3>
+    <p>p {font-size: 12px;}</p>
+    <h3>Example of CSS Types</h3>
+    <ol>
+      <li>div style="property: value;"</li>
+      <li><สไตล์ ไทพ์ = text/css> h1 {property: value;}</สไตล์></li>
+      <li>.abc {property: value;}</li>
+    </ol>
+    <h3>Example of CSS Selector</h3>
+    <p>body {}, div {}</p>
+    <h3>Example of CSS Combination</h3>
+    <ul>
+      <li>div&nbsp;p</li>
+      <li>div > p</li>
+      <li>div + p</li>
+      <li>div ~ p</li>
+    </ul>
+  </body>
+</html>

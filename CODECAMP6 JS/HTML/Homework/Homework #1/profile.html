@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Profile</title>
+  </head>
+  <body style="font-family: Helvetica; font-size: 12px;">
+    <nav
+      style="background-color: rgb(0, 0, 0); padding: 10px; margin-bottom: 4.5px;"
+    >
+      <a href="index.html" style="color: #fff; text-decoration: none;"
+        >Myself</a
+      >
+      <br />
+      <a href="friends.html" style="color: #fff; text-decoration: none;"
+        >Friends in Codecamp 6</a
+      >
+    </nav>
+
+    <div class="container">
+      <img src="img/kr.jpg" alt="Avatar" class="image" style="width:100%" />
+      <div class="middle">
+        <div class="text">
+          <p>
+            Hello. <br />My name Kanistha R. Liljeholm or Eiw as a nickname.
+            <br />I am taking the Codecamp 6, Online Fullstack JS. <br />And, my
+            hometown is BKK.
+          </p>
+          <p>
+            I am skilled in Video Editing, Motion Designs, and Product Designs.
+          </p>
+          <a href="https://www.instagram.com/kr.theworldthroughmylens/"
+            >Traveling, Hiking is my hobbies</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  .container {
+    position: relative;
+    width: 100%;
+  }
+
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+
+  .middle {
+    width: 800px;
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .container:hover .image {
+    opacity: 0.3;
+  }
+
+  .container:hover .middle {
+    opacity: 1;
+  }
+
+  .text {
+    width: 100%
+    color: #000;
+    font-size: 20px;
+    padding: 16px 32px;
+    line-height: 1.6;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(119, 47, 47);
+  }
+</style>

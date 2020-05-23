@@ -1,0 +1,232 @@
+/*LAP CSS GRID & FLEX, NIKE*/
+
+#nike-info {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  border-bottom: solid 1px lightgray;
+}
+
+.join-us {
+  width: 95px;
+  height: auto;
+  display: flex;
+  border-right: solid 1px lightgray;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-us p {
+  margin: 0px;
+}
+
+.icon {
+  width: 70px;
+  height: auto;
+  display: flex;
+  border-right: solid 1px lightgray;
+}
+
+.icon img {
+  width: 100%;
+}
+
+.right-info {
+  width: 200px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.help,
+.cart,
+.country {
+  display: inline-block;
+}
+
+.help {
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart img {
+  width: 100%;
+}
+
+.country {
+  width: 75px;
+  margin-left: auto;
+  margin-right: 25px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.country img {
+  display: inline-block;
+  width: 20px;
+}
+.country p {
+  display: inline-block;
+}
+
+#nike-menu {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  border-bottom: solid 1px lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 130px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 80%;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+  margin-left: auto;
+  margin-right: 70px;
+}
+
+li {
+  font-family: "Bebas";
+  display: inline-block;
+  font-size: 13px;
+  color: black;
+  letter-spacing: 1px;
+  margin-right: 35px;
+}
+
+.slide-info {
+  background-color: rgb(240, 240, 240);
+  height: 55px;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-info p {
+  color: black;
+  margin: 0;
+  display: block;
+}
+
+.search {
+  height: 37px;
+  width: 256px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.search p {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.hero-section {
+  background-size: cover;
+  background-position: center center;
+  background-image: url(img/nike-hero.jpg);
+  width: 92%;
+  height: 700px;
+  margin: 0 auto;
+}
+
+.trend-now {
+  width: 92%;
+  margin: 0 auto;
+  height: 135px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.trend-now h3 {
+  color: black;
+  font-size: 24px;
+}
+
+.product {
+  width: 92%;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.product-item {
+  width: calc(33% - 10px);
+  height: 380px;
+  background: black;
+  background-size: cover;
+  background-position: center center;
+}
+
+.description {
+  width: 92%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.product-des {
+  width: calc(33% - 10px);
+  height: 100px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.des {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.des h4 {
+  font-weight: 60px;
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.product-des h5 {
+  font-size: 20px;
+  font-weight: 60px;
+  color: grey;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+}
