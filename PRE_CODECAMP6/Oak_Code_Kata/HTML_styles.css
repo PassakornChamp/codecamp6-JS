@@ -1,0 +1,35 @@
+/*HTML_text_exercises*/
+strong {
+  color: green;
+  font-family: "Tahoma";
+}
+
+strong h1 {
+  color: red;
+}
+
+.p-one {
+  font-family: "Trebuchet MS";
+}
+
+.p-two {
+  font-family: "Time News Roman";
+}
+
+.p-three {
+  font-family: "Helvetica";
+}
+
+.p-four {
+  font-family: "Ariel";
+}
+
+/*HTML_text_exercises_book*/
+
+.book-name {
+  text-decoration: underline;
+}
+
+.book-adjective {
+  font-weight: bold;
+}
