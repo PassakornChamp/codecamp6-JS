@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Animation 1</title>
+  </head>
+  <body>
+    <div id="animation-container">
+      <div class="animation-1"></div>
+      <div class="animation-2"></div>
+      <div class="animation-3"></div>
+    </div>
+  </body>
+</html>
+
+<style>
+  #animation-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 50%;
+    height: 600px;
+    border-radius: 50%;
+    background: rgb(224, 224, 224);
+    margin: 0 auto;
+  }
+
+  .animation-1 {
+    background-color: rgb(74, 110, 67);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    animation-name: animation-fromto-1;
+    animation-duration: 3s;
+    visibility: hidden;
+    position: relative;
+    animation-delay: 1s;
+  }
+
+  @keyframes animation-fromto-1 {
+    from {
+      background-color: rgb(95, 61, 61);
+      width: 0px;
+      height: 0px;
+      border-radius: 50%;
+      top: 290px;
+      position: absolute;
+      visibility: visible;
+      opacity: 1;
+    }
+    to {
+      background-color: rgb(74, 110, 67);
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      top: 150px;
+      position: absolute;
+      opacity: 0.1;
+    }
+  }
+
+  .animation-2 {
+    background-color: rgb(74, 110, 67);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    animation-name: animation-fromto-2;
+    animation-duration: 3s;
+    visibility: hidden;
+    position: relative;
+    animation-delay: 2s;
+  }
+
+  @keyframes animation-fromto-2 {
+    from {
+      background-color: rgb(95, 61, 61);
+      width: 0px;
+      height: 0px;
+      border-radius: 50%;
+      top: 290px;
+      position: absolute;
+      visibility: visible;
+      opacity: 1;
+    }
+    to {
+      background-color: rgb(74, 110, 67);
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      top: 150px;
+      position: absolute;
+      opacity: 0.2;
+    }
+  }
+
+  .animation-3 {
+    background-color: rgb(74, 110, 67);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    animation-name: animation-fromto-3;
+    animation-duration: 3s;
+    visibility: hidden;
+    position: relative;
+    animation-delay: 3s;
+  }
+
+  @keyframes animation-fromto-3 {
+    from {
+      background-color: rgb(95, 61, 61);
+      width: 0px;
+      height: 0px;
+      border-radius: 50%;
+      position: absolute;
+      top: 290px;
+      visibility: visible;
+      opacity: 1;
+    }
+    to {
+      background-color: rgb(74, 110, 67);
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      position: absolute;
+      top: 150px;
+      opacity: 0.3;
+    }
+  }
+</style>
