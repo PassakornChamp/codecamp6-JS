@@ -100,15 +100,15 @@
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    animation-name: animation-fromto-3;
-    animation-duration: 3s;
+    animation-name: animation-percent;
+    animation-duration: 5s;
     visibility: hidden;
     position: relative;
     animation-delay: 3s;
   }
 
-  @keyframes animation-fromto-3 {
-    from {
+  @keyframes animation-percent {
+    0% {
       background-color: rgb(95, 61, 61);
       width: 0px;
       height: 0px;
@@ -118,11 +118,31 @@
       visibility: visible;
       opacity: 1;
     }
-    to {
+    40% {
       background-color: rgb(74, 110, 67);
       width: 300px;
       height: 300px;
       border-radius: 50%;
+      position: absolute;
+      top: 150px;
+      opacity: 0.5;
+    }
+
+    50% {
+      background-color: rgb(95, 61, 61);
+      width: 300px;
+      height: 300px;
+      border-radius: 20%;
+      position: absolute;
+      top: 150px;
+      opacity: 0.4;
+    }
+
+    100% {
+      background-color: rgb(74, 110, 67);
+      width: 300px;
+      height: 300px;
+      border-radius: 0%;
       position: absolute;
       top: 150px;
       opacity: 0.3;
