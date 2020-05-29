@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Animation 2 Delay and Direction</title>
+  </head>
+  <body>
+    <div id="animation-container">
+      <!--delay and direction normal-->
+      <div class="animation-3"></div>
+      <div class="animation-2"></div>
+      <div class="animation-1"></div>
+      <!--delay and direction reverse-->
+      <div class="animation-6"></div>
+      <div class="animation-5"></div>
+      <div class="animation-4"></div>
+      <!--delay and direction alternate-->
+      <div class="animation-9"></div>
+      <div class="animation-8"></div>
+      <div class="animation-7"></div>
+    </div>
+  </body>
+</html>
+
+<style>
+  #animation-container {
+    width: 100%;
+    height: auto;
+    background: rgb(224, 224, 224);
+  }
+
+  /*animation delay and direction normal*/
+  .animation-1 {
+    animation-name: animation-1;
+    position: absolute;
+    background-color: rgb(95, 61, 61);
+    width: 200px;
+    height: 200px;
+    border-radius: 0%;
+    visibility: hidden;
+    animation-duration: 10s;
+  }
+  @keyframes animation-1 {
+    0% {
+      background-color: rgb(95, 61, 61);
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0%;
+      visibility: visible;
+    }
+    20% {
+      background-color: rgb(74, 110, 67);
+      width: 200px;
+      height: 200px;
+      border-radius: 40%;
+      position: absolute;
+      left: 16%;
+    }
+
+    40% {
+      background-color: rgb(95, 61, 61);
+      width: 200px;
+      height: 200px;
+      border-radius: 30%;
+      position: absolute;
+      left: 32%;
+    }
+    60% {
+      background-color: rgb(74, 110, 67);
+      width: 200px;
+      height: 200px;
+      border-radius: 20%;
+      position: absolute;
+      left: 48%;
+    }
+    80% {
+      background-color: rgb(95, 61, 61);
+      width: 200px;
+      height: 200px;
+      border-radius: 10%;
+      position: absolute;
+      left: 64%;
+    }
+    100% {
+      background-color: rgb(74, 110, 67);
+      width: 200px;
+      height: 200px;
+      border-radius: 0%;
+      position: absolute;
+      left: 84%;
+    }
+  }
+  .animation-2 {
+    animation-name: animation-2;
+    position: absolute;
+    background-color: rgb(95, 61, 61);
+    width: 200px;
+    height: 200px;
+    border-radius: 0%;
+    visibility: hidden;
+    opacity: 0.6;
+    animation-duration: 10s;
+    animation-delay: 0.5s;
+  }
+  @keyframes animation-2 {
+    0% {
+      background-color: rgb(95, 61, 61);
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0%;
+      visibility: visible;
+    }
+    20% {
+      background-color: rgb(74, 110, 67);
+      width: 200px;
+      height: 200px;
+      border-radius: 40%;
+      position: absolute;
+      left: 16%;
+    }
+
+    40% {
+      background-color: rgb(95, 61, 61);
+      width: 200px;
+      height: 200px;
+      border-radius: 30%;
+      position: absolute;
+      left: 32%;
+    }
+    60% {
+      background-color: rgb(74, 110, 67);
+      width: 200px;
+      height: 200px;
+      border-radius: 20%;
+      position: absolute;
+      left: 48%;
+    }
+    80% {
+      background-color: rgb(95, 61, 61);
+      width: 200px;
+      height: 200px;
+      border-radius: 10%;
+      position: absolute;
+      left: 64%;
+    }
+    100% {
+      background-color: rgb(74, 110, 67);
+      width: 200px;
+      height: 200px;
+      border-radius: 0%;
+      position: absolute;
+      left: 84%;
+    }
+  }
+  .animation-3 {
+    animation-name: animation-3;
+    position: absolute;
+    background-color: rgb(95, 61, 61);
+    width: 200px;
+    height: 200px;
+    border-radius: 0%;
+    visibility: hidden;
+    opacity: 0.3;
+    animation-duration: 10s;
+    animation-delay: 1s;
+  }
+  @keyframes animation-3 {
+    0% {
+      background-color: rgb(95, 61, 61);
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0%;
+      visibility: visible;
+    }
+    20% {
+      background-color: rgb(74, 110, 67);
+      width: 200px;
+      height: 200px;
+      border-radius: 40%;
+      position: absolute;
+      left: 16%;
+    }
+    40% {
+      background-color: rgb(95, 61, 61);
+      width: 200px;
+      height: 200px;
+      border-radius: 30%;
+      position: absolute;
+      left: 32%;
+    }
+    60% {
+      background-color: rgb(74, 110, 67);
+      width: 200px;
+      height: 200px;
+      border-radius: 20%;
+      position: absolute;
+      left: 48%;
+    }
+    80% {
+      background-color: rgb(95, 61, 61);
+      width: 200px;
+      height: 200px;
+      border-radius: 10%;
+      position: absolute;
+      left: 64%;
+    }
+    100% {
+      background-color: rgb(74, 110, 67);
+      width: 200px;
+      height: 200px;
+      border-radius: 0%;
+      position: absolute;
+      left: 84%;
+    }
+  }
+
+  /*animation delay and direction reverse*/
+  .animation-4 {
+    animation-name: animation-4;
+    position: absolute;
+    background-color: rgb(95, 61, 61);
+    width: 200px;
+    height: 200px;
+    border-radius: 0%;
+    visibility: hidden;
+    animation-duration: 10s;
+    animation-delay: 10s;
+    animation-direction: reverse;
+  }
+  @keyframes animation-4 {
+    0% {
+      background-color: rgb(95, 61, 61);
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0%;
+      visibility: visible;
+    }
+    20% {
+      background-color: rgb(74, 110, 67);
+      width: 200px;
+      height: 200px;
+      border-radius: 40%;
+      position: absolute;
+      left: 16%;
+    }
+
+    40% {
+      background-color: rgb(95, 61, 61);
+      width: 200px;
+      height: 200px;
+      border-radius: 30%;
+      position: absolute;
+      left: 32%;
+    }
+    60% {
+      background-color: rgb(74, 110, 67);
+      width: 200px;
+      height: 200px;
+      border-radius: 20%;
+      position: absolute;
+      left: 48%;
+    }
+    80% {
+      background-color: rgb(95, 61, 61);
+      width: 200px;
+      height: 200px;
+      border-radius: 10%;
+      position: absolute;
+      left: 64%;
+    }
+    100% {
+      background-color: rgb(74, 110, 67);
+      width: 200px;
+      height: 200px;
+      border-radius: 0%;
+      position: absolute;
+      left: 84%;
+    }
+  }
+  .animation-5 {
+    animation-name: animation-5;
+    position: absolute;
+    background-color: rgb(95, 61, 61);
+    width: 200px;
+    height: 200px;
+    border-radius: 0%;
+    visibility: hidden;
+    opacity: 0.6;
+    animation-duration: 10s;
+    animation-delay: 10.5s;
+    animation-direction: reverse;
+  }
+  @keyframes animation-5 {
+    0% {
+      background-color: rgb(95, 61, 61);
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0%;
+      visibility: visible;
+    }
+    20% {
+      background-color: rgb(74, 110, 67);
+      width: 200px;
+      height: 200px;
+      border-radius: 40%;
+      position: absolute;
+      left: 16%;
+    }
+    40% {
+      background-color: rgb(95, 61, 61);
+      width: 200px;
+      height: 200px;
+      border-radius: 30%;
+      position: absolute;
+      left: 32%;
+    }
+    60% {
+      background-color: rgb(74, 110, 67);
+      width: 200px;
+      height: 200px;
+      border-radius: 20%;
+      position: absolute;
+      left: 48%;
+    }
+    80% {
+      background-color: rgb(95, 61, 61);
+      width: 200px;
+      height: 200px;
+      border-radius: 10%;
+      position: absolute;
+      left: 64%;
+    }
+    100% {
+      background-color: rgb(74, 110, 67);
+      width: 200px;
+      height: 200px;
+      border-radius: 0%;
+      position: absolute;
+      left: 84%;
+    }
+  }
+  .animation-6 {
+    animation-name: animation-6;
+    position: absolute;
+    background-color: rgb(95, 61, 61);
+    width: 200px;
+    height: 200px;
+    border-radius: 0%;
+    visibility: hidden;
+    opacity: 0.3;
+    animation-duration: 10s;
+    animation-delay: 11s;
+    animation-direction: reverse;
+  }
+  @keyframes animation-6 {
+    0% {
+      background-color: rgb(95, 61, 61);
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0%;
+      visibility: visible;
+    }
+    20% {
+      background-color: rgb(74, 110, 67);
+      width: 200px;
+      height: 200px;
+      border-radius: 40%;
+      position: absolute;
+      left: 16%;
+    }
+    40% {
+      background-color: rgb(95, 61, 61);
+      width: 200px;
+      height: 200px;
+      border-radius: 30%;
+      position: absolute;
+      left: 32%;
+    }
+    60% {
+      background-color: rgb(74, 110, 67);
+      width: 200px;
+      height: 200px;
+      border-radius: 20%;
+      position: absolute;
+      left: 48%;
+    }
+    80% {
+      background-color: rgb(95, 61, 61);
+      width: 200px;
+      height: 200px;
+      border-radius: 10%;
+      position: absolute;
+      left: 64%;
+    }
+    100% {
+      background-color: rgb(74, 110, 67);
+      width: 200px;
+      height: 200px;
+      border-radius: 0%;
+      position: absolute;
+      left: 84%;
+    }
+  }
+
+  /*animation delay and direction alternate*/
+  .animation-7 {
+    animation-name: animation-7;
+    position: absolute;
+    background-color: rgb(196, 196, 196);
+    width: 200px;
+    height: 200px;
+    border-radius: 0%;
+    visibility: hidden;
+    animation-duration: 10s;
+    animation-delay: 20s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+  }
+  @keyframes animation-7 {
+    0% {
+      background-color: rgb(196, 196, 196);
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0%;
+      visibility: visible;
+    }
+    20% {
+      background-color: rgb(0, 0, 0);
+      width: 200px;
+      height: 200px;
+      border-radius: 40%;
+      position: absolute;
+      left: 16%;
+    }
+    40% {
+      background-color: rgb(196, 196, 196);
+      width: 200px;
+      height: 200px;
+      border-radius: 30%;
+      position: absolute;
+      left: 32%;
+    }
+    60% {
+      background-color: rgb(0, 0, 0);
+      width: 200px;
+      height: 200px;
+      border-radius: 20%;
+      position: absolute;
+      left: 48%;
+    }
+    80% {
+      background-color: rgb(196, 196, 196);
+      width: 200px;
+      height: 200px;
+      border-radius: 10%;
+      position: absolute;
+      left: 64%;
+    }
+    100% {
+      background-color: rgb(0, 0, 0);
+      width: 200px;
+      height: 200px;
+      border-radius: 0%;
+      position: absolute;
+      left: 84%;
+    }
+  }
+  .animation-8 {
+    animation-name: animation-8;
+    position: absolute;
+    background-color: rgb(196, 196, 196);
+    width: 200px;
+    height: 200px;
+    border-radius: 0%;
+    visibility: hidden;
+    opacity: 0.6;
+    animation-duration: 10s;
+    animation-delay: 20.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+  }
+  @keyframes animation-8 {
+    0% {
+      background-color: rgb(196, 196, 196);
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0%;
+      visibility: visible;
+    }
+    20% {
+      background-color: rgb(0, 0, 0);
+      width: 200px;
+      height: 200px;
+      border-radius: 40%;
+      position: absolute;
+      left: 16%;
+    }
+    40% {
+      background-color: rgb(196, 196, 196);
+      width: 200px;
+      height: 200px;
+      border-radius: 30%;
+      position: absolute;
+      left: 32%;
+    }
+    60% {
+      background-color: rgb(0, 0, 0);
+      width: 200px;
+      height: 200px;
+      border-radius: 20%;
+      position: absolute;
+      left: 48%;
+    }
+    80% {
+      background-color: rgb(196, 196, 196);
+      width: 200px;
+      height: 200px;
+      border-radius: 10%;
+      position: absolute;
+      left: 64%;
+    }
+    100% {
+      background-color: rgb(0, 0, 0);
+      width: 200px;
+      height: 200px;
+      border-radius: 0%;
+      position: absolute;
+      left: 84%;
+    }
+  }
+  .animation-9 {
+    animation-name: animation-9;
+    position: absolute;
+    background-color: rgb(196, 196, 196);
+    width: 200px;
+    height: 200px;
+    border-radius: 0%;
+    visibility: hidden;
+    opacity: 0.3;
+    animation-duration: 10s;
+    animation-delay: 21s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+  }
+  @keyframes animation-9 {
+    0% {
+      background-color: rgb(196, 196, 196);
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0%;
+      visibility: visible;
+    }
+    20% {
+      background-color: rgb(0, 0, 0);
+      width: 200px;
+      height: 200px;
+      border-radius: 40%;
+      position: absolute;
+      left: 16%;
+    }
+    40% {
+      background-color: rgb(196, 196, 196);
+      width: 200px;
+      height: 200px;
+      border-radius: 30%;
+      position: absolute;
+      left: 32%;
+    }
+    60% {
+      background-color: rgb(0, 0, 0);
+      width: 200px;
+      height: 200px;
+      border-radius: 20%;
+      position: absolute;
+      left: 48%;
+    }
+    80% {
+      background-color: rgb(196, 196, 196);
+      width: 200px;
+      height: 200px;
+      border-radius: 10%;
+      position: absolute;
+      left: 64%;
+    }
+    100% {
+      background-color: rgb(0, 0, 0);
+      width: 200px;
+      height: 200px;
+      border-radius: 0%;
+      position: absolute;
+      left: 84%;
+    }
+  }
+</style>
