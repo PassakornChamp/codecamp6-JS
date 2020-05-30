@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>CSS Bootstrap Responsive</title>
+  </head>
+  <body
+    style="font-size: 12px; color: gray; margin: 0px"
+  >
+    <div id="travel-hero">
+      <div class="hero-pic">
+        <img src="img/travel_hero.jpg" />
+        <div class="hero-text"></div><h2>What to see in Thailand?</h2></div>
+      </div>
+    </div>
+
+    <div id="travel-content">
+      <div class="travel-info">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="travel-place">
+          <div class="travel-title"><h3>Koh Chang</h3></div>
+          <div class="travel-des">
+            <p>
+              Ko Chang, one of the largest Thai islands in the Gulf of Thailand,
+              contains dense, steep jungle. Mu Ko Chang National Park, a
+              preserve with hiking trails and waterfalls such as tiered Klong
+              Plu, covers the interior and extends to offshore coral reefs. The
+              coast is dotted with beaches and villages including Bang Bao,
+              built on piers. Hat Tha Nam (aka Lonely Beach) has a waterfront
+              party scene that attracts backpackers.
+            </p>
+          </div>
+        </div>
+        </div>
+        
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="travel-place">
+            <div class="travel-title"><h3>Koh Phi Phi</h3></div>
+            <div class="travel-des">
+                <p>
+                The Phi Phi Islands are an island group in Thailand, between the
+                large island of Phuket and the Straits of Malacca coast of
+                Thailand. The islands are administratively part of Krabi Province.
+                </p>
+            </div>
+            </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="travel-place">
+            <div class="travel-title"><h3>Doi Suthep</h3></div>
+            <div class="travel-des">
+                <p>
+                Doi Suthep, is a mountain west of Chiang Mai, Thailand. It is
+                1,676 metres in elevation and is one of the twin peaks of a
+                granite mountain. The other peak is known as Doi Pui and is
+                slightly higher. Doi Suthep is 15 kilometres from Chiang Mai city
+                centre.
+                </p>
+            </div>
+            </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="travel-place">
+                <div class="travel-title"><h3>Pattaya</h3></div>
+                <div class="travel-des">
+                <p>
+                    Pattaya is a city on Thailand’s eastern Gulf coast known for its
+                    beaches. A quiet fishing village as recently as the 1960s, it’s
+                    now lined with resort hotels, high-rise condos, shopping malls,
+                    cabaret bars and 24-hour clubs. Nearby, hillside Wat Phra Yai
+                    Temple features an 18m-tall golden Buddha. The area also features
+                    several designer golf courses, some with views of Pattaya Bay.
+                </p>
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="travel-place">
+                <div class="travel-title"><h3>Wang Takrai Waterfall</h3></div>
+                <div class="travel-des">
+                <p>
+                    Wang TaKhrai, a park a short distance from famed waterfall
+                    NamtokSarika, is also a resort and a botanical garden belonging to
+                    the Chumphot-Phanthip Foundation. Wang TaKhrai encompasses a total
+                    area of approximately 600 acres and is renowned for its beautiful
+                    landscapes, small rocky creek and wide variety of plants.
+                </p>
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="travel-place">
+                <div class="travel-title"><h3>Pha Taem National Park</h3></div>
+                <div class="travel-des">
+                <p>
+                    Pha Taem National Park is a national park on the Mekong River in
+                    Ubon Ratchathani Province, northeast Thailand. Phou Xieng Thong
+                    National Protected Area in Laos is on the opposite side of the
+                    river. It is notable for its Dipterocarp forest cover and for
+                    extensive rock art on cliffs above the Mekong
+                </p>
+                </div>
+                </div>
+            </div>
+          </div> <!-- End of row -->
+        </div>
+      </div>
+    </div>  
+    
+  </body>
+</html>
+
+
+<style>
+#travel-hero {
+  width: 100%;
+}
+
+.hero-pic {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-pic img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.hero-pic h2 {
+  color: white;
+  font-family: "Trebuchet MS";
+  font-size: 36px;
+  font-weight: 100;
+  text-transform: uppercase;
+  position: absolute;
+  border: solid white 2px;
+  padding: 10px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  text-align: center;
+  width: 60%;
+  transform: translateY(-50%);
+}
+
+.travel-content {
+  width: 100%;
+  height: auto;
+}
+
+.travel-info {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.travel-place {
+  height: auto;
+  display: inline-block;
+  background-color: #0d212c;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: calc(100% - 20px);
+}
+
+.travel-place:hover {
+  background-color: #24333b;
+  transition-duration: 1s;
+}
+
+.travel-title h3,
+.travel-des p {
+  font-family: "Trebuchet MS";
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 1.6;
+  color: #bab2a5;
+
+}
+
+.travel-title h3 {
+  font-size: 16px;
+}
+</style>
